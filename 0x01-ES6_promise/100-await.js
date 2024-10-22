@@ -1,7 +1,7 @@
 import uploadPhoto from "./5-photo-reject";
 import { createUser } from "./utils";
 
-async function asyncUploadUser() {
+export default async function asyncUploadUser() {
   try {
     const photoResponse = await uploadPhoto();
     const userResponse = await createUser();
