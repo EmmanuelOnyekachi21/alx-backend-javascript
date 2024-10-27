@@ -6,7 +6,7 @@ export default class Car {
   }
 
   cloneCar() {
-    // This line creates and returns a new instance of the class 
+    // This line creates and returns a new instance of the class
     // using the current instance's properties
     return new this.constructor(this._brand, this._motor, this._color);
   }
