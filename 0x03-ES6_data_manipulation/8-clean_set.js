@@ -6,7 +6,6 @@ export default function cleanSet(set, startString) {
   const filtered = [...set]
     .filter((value) => value.startsWith(startString)) // Keep values that start with startString
     .map((value) => value.slice(startString.length)) // Remove the startString part of each value
-    .filter((valueSub) => valueSub && valueSub !== value);
 
   // Join the remaining parts of each value with a hyphen and return it
   return filtered.join('-');
